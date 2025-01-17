@@ -1,0 +1,107 @@
+body {
+    
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    height: 50%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c79aaf;
+    text-align: center;
+
+}
+
+nav {
+    background-color: #c245a7;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    flex-direction: row;     /* Alineación en fila (de izquierda a derecha) */
+    justify-content: space-between; /* Se distribuye el espacio entre las columnas */
+    width: 50%;              /* El contenedor ocupará el 90% del ancho de la ventana */
+    max-width: 1200px;  
+    text-align: center;
+}
+
+main-content {
+    width: 70%;
+    float: left;
+}
+/* Estilos para el Sidebar (columna lateral izquierda) */
+/* Estilos para el Sidebar (columna lateral derecha) */
+.sidebar {
+    position: fixed; /* Fija el sidebar en la parte derecha de la pantalla */
+    top: 0; /* Inicia desde la parte superior de la página */
+    right: 0; /* Se coloca a la derecha */
+    width: 23%; /* Ancho fijo para la barra lateral */
+    height: 100%; /* Ocupa toda la altura de la pantalla */
+    background-color: #fff; /* Color de fondo del sidebar */
+    padding: 20px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de profundidad, hacia la izquierda */
+    z-index: 10; /* Asegura que el sidebar esté encima del contenido principal */
+    border-radius: 0 8px 8px 0; /* Bordes redondeados solo en el lado derecho */
+    overflow-y: auto; /* Permite el desplazamiento si el contenido es muy largo */
+}
+
+/* Estilos para los enlaces dentro del sidebar */
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto de hover en los enlaces */
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+/* Títulos dentro del sidebar */
+.sidebar h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo de listas dentro del sidebar */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+
+
+ul, ol {
+    padding-left: 20px;
+}
+footer {
+    background-color: #f0f0f0;
+    color: #e03685;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
